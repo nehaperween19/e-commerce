@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha's Kitchen</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <header>
+        <h1>Neha's Kitchen</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#add-recipe">Add Recipe</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="recipes">
+        <h2>Recipes</h2>
+        <div id="recipe-list">
+            <img src="rec.webp" alt="" width="500px">
+        </div>
+    </section>
+
+    <section id="add">
+        <h2>Add New Recipe</h2>
+        <form id="recipe-form">
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+            
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+            
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <section id="search">
+        <h2>Search Recipes</h2>
+        <input type="text" id="search-input" placeholder="Search by ingredient's name!">
+        <div id="search-results">
+        
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By &copy; Neha Perween</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
