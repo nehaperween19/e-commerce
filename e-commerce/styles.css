@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #282c34;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #61dafb;
+}
+
+header .cart-icon {
+    position: relative;
+}
+
+header .cart-icon #cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ff4136;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+}
+
+.cosmo {
+    background-image: url('Untitled\ design.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.cosmo h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.cosmo p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cosmo button {
+    background-color: #ff4136;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cosmo button:hover {
+    background-color: #e33e28;
+}
+
+main {
+    padding: 2em;
+}
+
+.products {
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.product-item button {
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    padding: 0.6em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    background-color: #21a1f1;
+}
+/* Add to existing CSS */
+.nav-active {
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.about, .contact {
+    padding: 2em;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #21a1f1;
+}
+
+footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
